@@ -18,17 +18,17 @@
         default_layer {
             bindings = <
                 &kp ESC     &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSPC
-                &kp LSHFT   &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp SQT
-                &kp LCTRL   &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp ESC
+                &kp LSHFT   &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp RSHFT
+                &kp LCTRL   &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp ENTER
                                                 &mo 4          &mo 1          &kp SPACE       &kp ENTER       &mo 2           &mo 3
             >;
         };
 
         layer_1 {
             bindings = <
-                &kp ESC     &kp LC(FSLH)    &kp CAPS        &kp LS(TAB)     &kp TAB         &none           &kp LS(N6)      &kp N7          &kp N8          &kp N9          &kp MINUS       &kp BSPC
-                &kp LSHFT   &kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)      &kp EQUAL       &kp N4          &kp N5          &kp N6          &kp LS(N8)      &kp SQT
-                &kp LCTRL   &kp LS(N6)      &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(EQUAL)   &kp N1          &kp N2          &kp N3          &kp FSLH        &kp ESC
+                &kp ESC     &kp LC(FSLH)    &kp CAPS        &kp LS(TAB)     &kp TAB         &kp LGUI(E)           &kp LS(N6)      &kp N7          &kp N8          &kp N9          &kp MINUS       &kp BSPC
+                &kp LSHFT   &kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)      &kp LS(N5)      &kp EQUAL       &kp N4          &kp N5          &kp N6          &kp LS(N8)      &kp RSHT
+                &kp LCTRL   &kp LS(N6)      &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(EQUAL)   &kp N1          &kp N2          &kp N3          &kp FSLH        &none
                                                 &kp LGUI       &trans          &kp SPACE       &kp ENTER       &kp N0          &kp DOT
             >;
         };
@@ -36,8 +36,8 @@
         layer_2 {
             bindings = <
                 &kp ESC     &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(A)       &none           &kp HOME        &kp UP          &kp END         &none           &kp BSPC
-                &kp LSHFT   &none           &kp LC(D)       &kp LC(LEFT)    &kp LC(RIGHT)   &none           &kp LS(SQT)     &kp LEFT        &kp DOWN        &kp RIGHT       &kp SQT         &kp SQT
-                &kp LCTRL   &none           &kp LC(LS(L))   &kp LC(BSPC)    &kp LC(DEL)     &kp LC(S)       &kp GRAVE       &kp PG_UP       &kp PG_DN       &none           &none           &kp ESC
+                &kp LSHFT   &none           &kp LC(D)       &kp LC(LEFT)    &kp LC(RIGHT)   &none           &kp LS(SQT)     &kp LEFT        &kp DOWN        &kp RIGHT       &kp SQT         &kp RSHFT
+                &kp LCTRL   &none           &kp LC(LS(L))   &kp LC(BSPC)    &kp LC(DEL)     &kp LC(S)       &kp GRAVE       &kp PG_UP       &kp PG_DN       &none           &none           &kp ENTER
                                                 &kp LGUI       &kp LC(R)       &kp SPACE       &kp ENTER       &trans          &kp RGUI
             >;
         };
@@ -45,8 +45,8 @@
         layer_3 {
             bindings = <
                 &none       &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &kp BSPC
-                &none       &kp PSCRN       &kp LA(PSCRN)   &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PP        &none           &none           &none           &none           &none           &kp SQT
-                &none       &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &kp ESC
+                &none       &kp PSCRN       &kp LA(PSCRN)   &kp C_VOL_DN    &kp C_VOL_UP    &kp C_PP        &none           &none           &none           &none           &none           &kp RSHFT
+                &none       &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &kp ENTER
                                                 &to 5          &kp LGUI        &kp SPACE       &kp ENTER       &trans          &none
             >;
         };
@@ -117,7 +117,7 @@
 
         combo_lbrace {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
             bindings = <&kp LBRC>;
         };
 
@@ -153,7 +153,7 @@
 
         combo_slash {
             timeout-ms = <50>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
             bindings = <&kp FSLH>;
         };
 
