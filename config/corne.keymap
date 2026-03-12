@@ -64,7 +64,7 @@
             bindings = <
                 &trans      &trans          &trans          &trans          &trans          &trans          &kp KP_NUM      &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_MINUS    &trans
                 &trans      &trans          &trans          &trans          &trans          &trans          &kp SLCK        &kp KP_N4       &kp KP_N5       &kp KP_N6       &kp KP_MULTIPLY &trans
-                &LA(Z)      &trans          &trans          &trans          &trans          &trans          &kp KP_PLUS     &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_SLASH    &trans
+                &kp LA(Z)      &trans          &trans          &trans          &trans          &trans          &kp KP_PLUS     &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_SLASH    &trans
                                                 &trans         &kp LALT        &to 0           &kp ENTER       &kp KP_N0       &kp KP_DOT
             >;
         };
